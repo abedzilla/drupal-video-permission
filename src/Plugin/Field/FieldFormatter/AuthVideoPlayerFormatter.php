@@ -100,6 +100,7 @@ class AuthVideoPlayerFormatter extends VideoPlayerFormatter {
           '#theme' => $theme,
           '#items' => array(Url::fromUri(file_create_url($video_uri))),
           '#player_attributes' => $this->getSettings(),
+          '#destination' => \Drupal::request()->getRequestUri()
         );
       }
       return $elements;

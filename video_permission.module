@@ -20,7 +20,8 @@ function video_permission_theme() {
       'variables' => array(
           'items' => NULL,
           'player_attributes' => NULL,
-          'destination' => \Drupal::service('path.current')->getPath())
+          'destination' => NULL
+      )
     ),
     'video_player' => array(
       'variables' => array('items' => NULL, 'player_attributes' => NULL)
