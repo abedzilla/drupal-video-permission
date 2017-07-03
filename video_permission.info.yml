@@ -1,4 +1,4 @@
-name: Video Authenticated User
+name: Video Permission
 type: module
 description: Extend the capability of Video module field formatter by restricting permission to only authenticated user can view the video.
 package: Fields

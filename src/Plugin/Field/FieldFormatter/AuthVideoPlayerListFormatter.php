@@ -5,7 +5,7 @@
  * Contains \Drupal\video\Plugin\Field\FieldFormatter\AuthVideoPlayerListFormatter.
  */
 
-namespace Drupal\video_authenticated_user\Plugin\Field\FieldFormatter;
+namespace Drupal\video_permission\Plugin\Field\FieldFormatter;
 
 use Drupal\Core\Field\FieldItemListInterface;
 use Drupal\Core\Field\FieldDefinitionInterface;

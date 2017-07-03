@@ -2,10 +2,10 @@
 
 /**
  * @file
- * Contains Drupal\video_authenticated_user\Plugin\Field\FieldFormatter\AuthVideoPlayerFormatter.
+ * Contains Drupal\video_permission\Plugin\Field\FieldFormatter\AuthVideoPlayerFormatter.
  */
 
-namespace Drupal\video_authenticated_user\Plugin\Field\FieldFormatter;
+namespace Drupal\video_permission\Plugin\Field\FieldFormatter;
 
 use Drupal\Core\Field\FormatterBase;
 use Drupal\Core\Field\FieldItemListInterface;

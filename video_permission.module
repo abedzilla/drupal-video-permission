@@ -14,7 +14,7 @@ use Drupal\field\FieldConfigInterface;
 /**
  * Implements hook_theme().
  */
-function video_authenticated_user_theme() {
+function video_permission_theme() {
   return array(
     'access_denied' => array(
       'variables' => array(
@@ -31,7 +31,7 @@ function video_authenticated_user_theme() {
  * When logout, user stays in same page if it's possible.
  * @param $account
  */
-function video_authenticated_user_user_login($account) {
+function video_permission_user_login($account) {
   $previousUrl= \Drupal::request()->server->get('HTTP_REFERER');
   $response = new Symfony\Component\HttpFoundation\RedirectResponse($previousUrl);
   $response->send();
