@@ -1,0 +1,13 @@
+name: Video Authenticated User
+type: module
+description: Extend the capability of Video module field formatter by restricting permission to only authenticated user can view the video.
+package: Fields
+# core: 8.x
+dependencies:
+  - file
+  - video
+# Information added by Drupal.org packaging script on 2016-02-14
+version: '8.x-1.x-dev'
+core: '8.x'
+project: 'video'
+datestamp: 1498983345

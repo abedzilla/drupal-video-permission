@@ -1,0 +1,35 @@
+field.formatter.settings.auth_video_player:
+  type: mapping
+  label: 'Video player settings'
+  mapping:
+    selected_role:
+      type: string
+      label: 'Only Selected Roles'
+    # controls:
+    #   type: boolean
+    #   label: 'Controls'
+    # autoplay:
+    #   type: boolean
+    #   label: 'Autoplay'
+    # loop:
+    #   type: boolean
+    #   label: 'Loop'
+    # muted:
+    #   type: boolean
+    #   label: 'Muted'
+    # width:
+    #   type: string
+    #   label: 'Width'
+    # height:
+    #   type: string
+    #   label: 'Height'
+    # preload:
+    #   type: string
+    #   label: 'Preload'
+field.formatter.settings.auth_video_player_list:
+  type: mapping
+  label: 'Video player settings'
+  mapping:
+    selected_role:
+      type: string
+      label: 'Only Selected Roles'

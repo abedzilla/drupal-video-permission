@@ -1,0 +1,39 @@
+<?php
+
+/**
+ * @file
+ * Exposes global functionality for video fields.
+ */
+
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\file\Entity\File;
+use Drupal\field\FieldStorageConfigInterface;
+use Drupal\field\FieldConfigInterface;
+
+/**
+ * Implements hook_theme().
+ */
+function video_authenticated_user_theme() {
+  return array(
+    'access_denied' => array(
+      'variables' => array(
+          'destination' => \Drupal::request()->getRequestUri()
+      )
+    ),
+    'video_player' => array(
+      'variables' => array('items' => NULL, 'player_attributes' => NULL)
+    ),
+  );
+}
+
+/**
+ * When logout, user stays in same page if it's possible.
+ * @param $account
+ */
+function video_authenticated_user_user_login($account) {
+  $previousUrl= \Drupal::request()->server->get('HTTP_REFERER');
+  $response = new Symfony\Component\HttpFoundation\RedirectResponse($previousUrl);
+  $response->send();
+  return;
+}
