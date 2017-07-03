@@ -9,4 +9,3 @@ If you want to colaborate to backport this module to older version of drupal, pl
 ## Requirements
 * Drupal 8.x
 * Video Module (https://www.drupal.org/project/video). 
-* File Module
