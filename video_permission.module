@@ -18,8 +18,9 @@ function video_permission_theme() {
   return array(
     'access_denied' => array(
       'variables' => array(
-          'destination' => \Drupal::request()->getRequestUri()
-      )
+          'items' => NULL,
+          'player_attributes' => NULL,
+          'destination' => \Drupal::service('path.current')->getPath())
     ),
     'video_player' => array(
       'variables' => array('items' => NULL, 'player_attributes' => NULL)

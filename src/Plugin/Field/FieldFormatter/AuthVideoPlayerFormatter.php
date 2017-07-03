@@ -95,6 +95,7 @@ class AuthVideoPlayerFormatter extends VideoPlayerFormatter {
                       $theme = 'access_denied';
             }
         }
+
         $elements[$delta] = array(
           '#theme' => $theme,
           '#items' => array(Url::fromUri(file_create_url($video_uri))),
